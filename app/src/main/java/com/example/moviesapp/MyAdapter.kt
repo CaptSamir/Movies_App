@@ -18,7 +18,7 @@ class MyAdapter (private var movieList :ArrayList<Movie>):RecyclerView.Adapter<M
 
     }
 
-
+   // @SuppressLint("SuspiciousIndentation")
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyviewHolder {
       val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item,parent,false)
         return MyviewHolder(view)

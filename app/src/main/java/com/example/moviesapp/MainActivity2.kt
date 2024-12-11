@@ -44,20 +44,12 @@ class MainActivity2 : AppCompatActivity() {
         val txt_userName = binding.textView2
         txt_userName.text = "Welcome,${userName.toString()}"
         imageId= arrayOf(
-           // R.drawable.i11,
-            //R.drawable.i12,
-            //R.drawable.i13,
-            //R.drawable.i14,
-           // R.drawable.i15,
+
           R.drawable.i1,R.drawable.i2,R.drawable.i3,R.drawable.i4,R.drawable.i5,R.drawable.i6,R.drawable.i7,R.drawable.i8,R.drawable.i9,R.drawable.i10,
 
             )
         tittleId = arrayOf(
-        //  "  Avengers: Endgame",
-         //  " Spider-Man: No Way Home",
-          //  "Black Panther",
-           // "Guardians of the Galaxy",
-           // "Iron Man",
+
             "Dune: Part Two",
             "All We Imagine as Light",
             "Perfect Days",
@@ -71,11 +63,7 @@ class MainActivity2 : AppCompatActivity() {
 
         )
        discrpId = arrayOf(
-           //"to After the devastating events of Infinity War, the Avengers assemble one last time to reverse the damage and restore balance to the universe.",
-             // "to Peter Parker teams up with other versions of Spider-Man from alternate universes to fix a multiverse-altering mistake.",
-         // "T Challa, the newly crowned king of Wakanda, faces internal and external threats while embracing his role as the Black Panther.",
-           //"A group of misfits led by Peter Quill teams up to save the galaxy from the villainous Ronan the Accuser.",
-           //"Billionaire Tony Stark creates a suit of armor to save his life and becomes the armored superhero Iron Man.",
+
             "A continuation of Paul Atreides' journey on Arrakis as he rises to power and faces enemies while embracing his destiny.",
             "An exploration of working-class life in Mumbai, showcasing its textures and light through poignant storytelling.",
             "A meditative tale of a Tokyo toilet cleaner whose everyday choices reveal a profound inner life.",
@@ -91,11 +79,7 @@ class MainActivity2 : AppCompatActivity() {
         )
 
        rateId = arrayOf(
-           //" 8.4",
-           //"8.3",
-          // "7.3",
-          // "8.0",
-          //  "7.9,",
+
                 "8.4", // Dune: Part Two
                " 9.0", // All We Imagine as Light
                "8.7", // Perfect Days
@@ -112,17 +96,6 @@ class MainActivity2 : AppCompatActivity() {
         newRecyclerView.layoutManager=LinearLayoutManager(this)
         newArrayList= arrayListOf<Movie>()
         getmovies()
-
-
-
-
-
-
-
-
-
-
-
 
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
