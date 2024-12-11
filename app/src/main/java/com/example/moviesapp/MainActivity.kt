@@ -27,12 +27,13 @@ class MainActivity : AppCompatActivity() {
             val password= binding.edPass.text
             intent.putExtra("USERNAME_KEY","$userName")
             if (userName != null && password!= null && password.length>7){
-                // binding.tvTitle.text= userName.toString()
                 Toast.makeText(this,"Login successfully", Toast.LENGTH_LONG).show()
 
                 startActivity(intent)
                 finish()
             }
+            else if (userName.isEmpty() && password.isEmpty()) Toast.makeText(this , "Please enter username & password",Toast.LENGTH_LONG).show()
+            else if (password.length<8)  Toast.makeText(this , "enter password   at least 8 characters",Toast.LENGTH_LONG).show()
             else Toast.makeText(this,"Log in failed",Toast.LENGTH_LONG).show()
         }
     }
